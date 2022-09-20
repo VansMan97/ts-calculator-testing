@@ -13,7 +13,7 @@ class Calculator{
            let subtraction = function(a: number, b: number): number{
                return a - b;
            }
-           let multipln = function(a: number, b: number): number{
+           let multipl = function(a: number, b: number): number{
                return a * b;
            }
            let divide = function(a: number, b: number): number{
