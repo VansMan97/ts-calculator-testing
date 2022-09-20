@@ -1,10 +1,7 @@
 class Calculator{
-    a: number;
-    b: number;
-        constructor(a:number, b:number){
-          this.a=a;
-          this.b=b;
-        }
+ a: number;
+ b: number;
+
         add(a: number, b: number): number {
             return a + b;
         }
@@ -18,4 +15,5 @@ class Calculator{
             return a/b;
         }
         } 
+
 
