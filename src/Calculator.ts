@@ -1,4 +1,4 @@
-module.exports = class Calculator{
+export default class Calculator{
     a: number;
     b: number;
     oper: string;
@@ -8,7 +8,7 @@ module.exports = class Calculator{
         this.b=b;
         this.oper=oper;           
     }
-    Calculate(){
+     Calculate(){
         if (this.oper=="+"){
             return this.a + this.b;
         }
@@ -26,4 +26,3 @@ module.exports = class Calculator{
         }
     } 
 }
-
