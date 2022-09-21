@@ -1,27 +1,30 @@
-
-class Calculator{
+module.exports = class Calculator{
     a: number;
     b: number;
-    addition: number;
-           constructor(a:number, b:number, addition: number){
+    oper: string;
+    
+           constructor(a:number, b:number, oper:string){
                this.a=a;
                this.b=b;
-               this.addition=addition;
+               this.oper=oper;
+               
            }
            Calculate(){
-            let addition = function(a: number, b: number): number{
-               return a + b;
+            if (this.oper=="+"){
+               return this.a + this.b;
            }
-           let subtraction = function(a: number, b: number): number{
-               return a - b;
+            else if(this.oper=="-"){
+               return this.a - this.b;
            }
-           let multipl = function(a: number, b: number): number{
-               return a * b;
+            else if(this.oper=="*"){
+               return this.a * this.b;
            }
-           let divide = function(a: number, b: number): number{
-               return a / b;
+            else if(this.oper=="/"){
+               return this.a / this.b;
+           }
+           else{
+            return "error";
            }
        } 
    }
-   
-module.exports=addition;
+
