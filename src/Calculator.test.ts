@@ -18,8 +18,12 @@ test('4 + 5 = 9', () => {
     let calc: Calculator = new Calculator(20,4, "/");
     expect(calc.Calculate()).toEqual(5);
   })
-  test('20 % 4 = error', () => {
+  test(`2 / 0 = can't divide by 0`, () => {
+    let calc: Calculator = new Calculator(2,0, "/");
+    expect(calc.Calculate()).toEqual("can't divide by 0");
+  })
+  test('20 % 4 = operator is not supported', () => {
     let calc: Calculator = new Calculator(20,4, "%");
-    expect(calc.Calculate()).toEqual("error");
+    expect(calc.Calculate()).toEqual("the operator is not supported");
   })
 });
