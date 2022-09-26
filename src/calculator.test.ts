@@ -19,8 +19,8 @@ describe("Calulator Testing", () => {
     try{
       calculator.calculate(2, "/", 0)
     }
-    catch(err){
-      expect(err).toBe("operation is not supported");
+    catch(e){
+      expect(String(e)).toContain("divide by zero");
     }
   });
 });

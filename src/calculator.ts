@@ -11,7 +11,7 @@ export default class Calculator {
         return a * b;
       case "/":
         if (b === 0) {
-          throw new Error("devide by zero");
+          throw new Error("divide by zero");
         }
         return a / b;
       default:
