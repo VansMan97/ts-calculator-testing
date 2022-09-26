@@ -16,6 +16,11 @@ describe("Calulator Testing", () => {
     expect(calculator.calculate(20, "/", 4)).toEqual(5);
   });
   test(`2 / 0 = can't divide by 0`, () => {
-    //TODO: test throw error
+    try{
+      calculator.calculate(2, "/", 0)
+    }
+    catch(err){
+      expect(err).toBe("operation is not supported");
+    }
   });
 });
